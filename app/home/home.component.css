@@ -1,0 +1,60 @@
+:host {
+  display: flex;
+  flex-flow: column nowrap;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #ebebeb;
+  transition: padding 0.25s ease-in; }
+  :host .app-home {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+  :host .brand {
+    font-family: "Francois One", sans-serif;
+    letter-spacing: .1rem;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0; }
+  :host .tagline {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 0.2rem;
+    letter-spacing: 0.02rem; }
+  :host .home-button, :host .mdl-button--raised[disabled][disabled], :host .mdl-button--raised.mdl-button--disabled.mdl-button--disabled {
+    width: 250px;
+    color: #ebebeb; }
+  @media screen and (min-width: 1028px) {
+    :host {
+      padding-left: 30%;
+      padding-right: 30%;
+      padding-top: 5%; } }
+  @media screen and (min-width: 768px) {
+    :host.bg-payir {
+      background-image: url(app/shared/images/home/bg-payir.jpg);
+      background-size: cover; }
+    :host.bg-woods {
+      background-image: url(app/shared/images/home/bg-woods.jpg);
+      background-size: cover; }
+    :host.bg-kayak {
+      background-image: url(app/shared/images/home/bg-kayak.jpg);
+      background-size: cover; }
+    :host.bg-hike {
+      background-image: url(app/shared/images/home/bg-hike.jpg);
+      background-size: cover; } }
+  @media screen and (min-width: 768px) and (max-width: 1027px) {
+    :host {
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-top: 3%; } }
+  @media screen and (max-width: 767px) {
+    :host {
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 3%;
+      background: #962D3E; } }

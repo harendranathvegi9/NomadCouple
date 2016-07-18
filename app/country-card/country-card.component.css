@@ -1,0 +1,74 @@
+:host {
+  width: 380px;
+  height: 196px;
+  max-width: 90vw;
+  margin: 20px 1.5vw;
+  margin-left: auto;
+  margin-right: auto; }
+  :host .flag-wrapper {
+    max-height: 50px;
+    max-width: 65px;
+    overflow: hidden; }
+    :host .flag-wrapper img.flag {
+      max-width: 100%;
+      max-height: 100%;
+      box-sizing: border-box;
+      object-fit: contain;
+      object-position: 100%;
+      border: 1px solid #bababa; }
+  :host .content {
+    padding: 0 10% 16px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start; }
+    :host .content .person {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center; }
+      :host .content .person.not-required {
+        color: #009966; }
+      :host .content .person.required {
+        color: #CC3333; }
+      :host .content .person.on-arrival {
+        color: #11CD6E; }
+      :host .content .person.evisa {
+        color: #00A2E8; }
+      :host .content .person.unknown {
+        color: #ABABAB; }
+      :host .content .person.refused {
+        color: #333333; }
+      :host .content .person .name {
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 13px;
+        text-align: center;
+        line-height: 13px;
+        min-width: 60px;
+        margin-top: 10px;
+        margin-bottom: 5px; }
+    :host .content .visa-status {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 13px; }
+  :host > .mdl-card__actions {
+    border-color: rgba(255, 255, 255, 0.2); }
+  :host > .mdl-card__title {
+    align-items: flex-start;
+    justify-content: space-between; }
+  :host > .mdl-card__title > h4 {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 21px; }
+  :host > .mdl-card__actions {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center; }
+  :host > .mdl-card__actions > .material-icons {
+    padding-right: 10px; }
+  :host a {
+    color: inherit; }
+  :host .link {
+    font-size: 17px; }

@@ -1,0 +1,42 @@
+.nomad-country-count {
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .nomad-country-count.on-arrival .number {
+    color: #11CD6E; }
+  .nomad-country-count.not-required .number {
+    color: #009966; }
+  .nomad-country-count.evisa .number {
+    color: #00A2E8; }
+  .nomad-country-count.required .number {
+    color: #CC3333; }
+  .nomad-country-count.unknown .number {
+    color: #ABABAB; }
+  .nomad-country-count.refused .number {
+    color: #333333; }
+  .nomad-country-count .number {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    letter-spacing: 0.05rem; }
+  .nomad-country-count .text, .nomad-country-count .number {
+    text-align: center; }
+  .nomad-country-count .text {
+    margin-top: 0; }
+  .nomad-country-count.selected .text {
+    font-weight: bold; }
+  .nomad-country-count .ripple-workaround {
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%) translate(107px, 24px); }
+  @media screen and (min-width: 1028px) {
+    .nomad-country-count {
+      width: 50%; } }
+  @media screen and (max-width: 1027px) {
+    .nomad-country-count {
+      width: 100%; } }
