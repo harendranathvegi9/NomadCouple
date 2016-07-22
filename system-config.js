@@ -5,9 +5,15 @@
  * User Configuration.
  **********************************************************************************************/
 /** Map relative paths to URLs. */
-var map = {};
+var map = {
+    'ng2-meta': 'vendor/ng2-meta/dist/meta.service.js'
+};
 /** User packages configuration. */
-var packages = {};
+var packages = {
+    'ng2-meta': {
+        format: 'cjs'
+    }
+};
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
  * Everything underneath this line is managed by the CLI.
